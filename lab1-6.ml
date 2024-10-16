@@ -13,7 +13,6 @@ let rec sin x n = match n with
   if n mod 2 = 0 then rest +. v
   else rest -. v;;
 
-
 let rec cos x n = match n with
 | 0 -> 1.
 | _ ->
