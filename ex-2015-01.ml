@@ -18,8 +18,8 @@ struct
   exception DivisionByZero
 
   let rec ( > ) a b = match (a, b) with
-  | (_, Zero) -> true
   | (Zero, _) -> false
+  | (_, Zero) -> true
   | (Succ x, Succ y) -> x > y
 
   let rec ( + ) a b = match b with
