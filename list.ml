@@ -216,3 +216,9 @@ let rec merge_sort = function
   let m = length lst / 2 in
   let (l, r) = splitn lst m in
   merge (merge_sort l) (merge_sort r);;
+
+let of_string s = 
+  let rec of_string i = 
+    if i = String.length s then []
+    else s.[i] :: of_string (i+1)
+  in of_string 0;; 
